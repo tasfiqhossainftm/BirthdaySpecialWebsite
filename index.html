@@ -13,9 +13,26 @@
             text-align: center;
             color: white;
         }
+        
         .container {
             padding: 50px;
         }
+        .container input{
+            width: 300px;
+            height: 40px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 20px 0;
+            border: none;
+        }
+        .container button{
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: rgb(248, 171, 248);
+            cursor: pointer;
+        }   
         h1 {
             font-size: 50px;
             margin-top: 20px;
@@ -162,23 +179,14 @@
             <p>Here are some sweet memories we’ve shared:</p>
         </div>
         <br><br>
+        <div class="container">
+            <h2>Enter HeartCode to See Our Memories</h2>
+            <input type="password" id="passcode" placeholder="HeartCode Please!!!">
+            <br>
+            <button onclick="verifyPasscode()">Submit</button>
+          </div>
 
-        <div class="gallery">
-            <!-- Add your photos here -->
-            <img src="image/IMG-20240629-WA0516.jpg" alt="Memory 1">
-            <img src="image/IMG-20240629-WA0516.jpg" alt="Memory 1">
-            <img src="image/IMG-20240629-WA0516.jpg" alt="Memory 1">
-            <img src="image/IMG-20240629-WA0516.jpg" alt="Memory 1">
-            <img src="image/IMG-20240629-WA0516.jpg" alt="Memory 1">
-            <img src="image/IMG-20240629-WA0516.jpg" alt="Memory 1">
-            <img src="image/IMG-20240629-WA0516.jpg" alt="Memory 1">
-            <img src="image/IMG-20240629-WA0516.jpg" alt="Memory 1">
-            <img src="image/IMG-20240629-WA0516.jpg" alt="Memory 1">
-            <img src="image/IMG-20240629-WA0516.jpg" alt="Memory 1">
-            <img src="image/IMG-20240629-WA0516.jpg" alt="Memory 1">
-            <img src="image/IMG-20240629-WA0516.jpg" alt="Memory 1">
-            <img src="image/IMG-20240629-WA0516.jpg" alt="Memory 1">
-        </div>
+        
     </div>
 
     <footer>
@@ -205,6 +213,17 @@
                 document.getElementById("timer").innerHTML = "Yeah! It's your day Jan! Happy birthday to the most beautiful woman I have ever seen  in my life ";
             }
         }, 1000);
+        
+    function verifyPasscode(gallery) {
+      var passcode = document.getElementById("passcode").value;
+      // Set your passcode here
+      if (passcode === "20021227@") {
+        window.location.href = "memory.html"; // Redirect to your memory page
+      } else {
+        alert("Incorrect passcode. Please try again.");
+      }
+    }
+  
     </script>
 </body>
 </html>
