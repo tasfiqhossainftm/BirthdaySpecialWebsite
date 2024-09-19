@@ -7,3 +7,11 @@
 .gallery img:hover {
     transform: scale(1.1);
 }
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
