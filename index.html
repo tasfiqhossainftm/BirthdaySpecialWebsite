@@ -87,6 +87,84 @@
         footer{
             margin-bottom: 80px;
         }
+         /* Background Animation of Love Emojis */
+         .love-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            pointer-events: none; /* Allows users to click elements behind */
+        }
+
+        .love {
+            position: absolute;
+            font-size: 30px;
+            animation: fall 10s linear infinite;
+            opacity: 0.9;
+        }
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Adding variety in animation timing and sizes */
+.love:nth-child(1) {
+    left: 10%;
+    animation-duration: 12s;
+    font-size: 45px;
+}
+
+.love:nth-child(2) {
+    left: 25%;
+    animation-duration: 9s;
+    font-size: 40px;
+}
+
+.love:nth-child(3) {
+    left: 40%;
+    animation-duration: 10s;
+}
+
+.love:nth-child(4) {
+    left: 55%;
+    animation-duration: 8s;
+}
+
+.love:nth-child(5) {
+    left: 70%;
+    animation-duration: 11s;
+}
+
+.love:nth-child(6) {
+    left: 85%;
+    animation-duration: 7s;
+    font-size: 50px;
+}
+
+.love:nth-child(7) {
+    left: 15%;
+    animation-duration: 6s;
+    font-size: 35px;
+}
+
+.love:nth-child(8) {
+    left: 50%;
+    animation-duration: 13s;
+    font-size: 38px;
+}
+
+/* Content section styles */
+.content {
+    padding-top: 150px;
+}
         @media screen and (max-width: 576px) {
             .cat{
                 flex-direction: column;
@@ -118,6 +196,26 @@
     </style>
 </head>
 <body>
+    <div class="love-container"> 
+    </div>
+        <div class="love">🌸</div>
+        <div class="love">❤️</div>
+        <div class="love">🌼</div>
+        <div class="love">💖</div>
+        <div class="love">💘</div>
+        <div class="love">🌸</div>
+        <div class="love">💕</div>
+        <div class="love">🌼</div>
+        <div class="love">💓</div>
+        <div class="love">🌸</div>
+        <div class="love">💞</div>
+        <div class="love">💗</div>
+        <div class="love">💝</div>
+        <div class="love">🌸</div>
+        <div class="love">🌼</div>
+
+    </div>
+</div>
     <div class="container">
         <h5>Hey dear! first of all <br> You need to play the audio!</h5>
         <audio controls loop >
